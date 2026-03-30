@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Charity Awuor — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer building scalable web applications, APIs, and open-source tools. Available for freelance and full-time roles." />
+  <meta name="keywords" content="full-stack developer, React, Node.js, TypeScript, portfolio, software engineer" />
+  <meta name="author" content="Charity Awuor" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Charity Awuor  — Full-Stack Developer" />
+  <meta property="og:description" content="Building scalable applications and elegant digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/charityawuor10-cmd" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Charity Awuor — Full-Stack Developer" />
+  <meta name="twitter:description" content="Full-stack developer. Open source contributor. Problem solver." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== CURSOR ==================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== LOADER ==================== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo mono">[AC]</div>
+      <span class="loader-text mono" id="loaderText">&gt; initializing...</span>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <span class="loader-pct mono" id="loaderPct">0%</span>
+    </div>
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav-header" id="navHeader">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-bracket mono">[</span>
+        <span class="nav-logo-name">AC</span>
+        <span class="nav-logo-bracket mono">]</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link"><span class="num mono">01.</span>Home</a></li>
+        <li><a href="#about"    class="nav-link"><span class="num mono">02.</span>About</a></li>
+        <li><a href="#projects" class="nav-link"><span class="num mono">03.</span>Projects</a></li>
+        <li><a href="#skills"   class="nav-link"><span class="num mono">04.</span>Skills</a></li>
+        <li><a href="#contact"  class="nav-link"><span class="num mono">05.</span>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark mode">
+          <span id="themeIcon">◐</span>
+        </button>
+        <a href="assets/images/resume.pdf" download class="btn btn-sm btn-outline">↓ Resume</a>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-links">
+        <li><a href="#home"     class="mobile-link"><span class="mono">01.</span> Home</a></li>
+        <li><a href="#about"    class="mobile-link"><span class="mono">02.</span> About</a></li>
+        <li><a href="#projects" class="mobile-link"><span class="mono">03.</span> Projects</a></li>
+        <li><a href="#skills"   class="mobile-link"><span class="mono">04.</span> Skills</a></li>
+        <li><a href="#contact"  class="mobile-link"><span class="mono">05.</span> Contact</a></li>
+      </ul>
+      <a href="assets/images/resume.pdf" download class="btn btn-outline" style="margin-top:2rem">↓ Download Resume</a>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN ==================== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow g1"></div>
+        <div class="hero-glow g2"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Text -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span class="mono">Available for work</span>
+          </div>
+
+          <div class="hero-greeting mono reveal">
+            <span class="prompt">~charityawuor10-cmd/portfolio</span><span class="caret-blink">▋</span>
+          </div>
+
+          <h1 class="hero-title reveal r-d1">
+            I build<br>
+            <span class="title-accent">powerful</span><br>
+            digital products.
+          </h1>
+
+          <p class="hero-subtitle reveal r-d2">
+            Full-stack engineer specializing in React, Node.js &amp; cloud
+            architecture. I turn complex problems into clean, scalable solutions.
+          </p>
+
+          <div class="hero-ctas reveal r-d3">
+            <a href="#projects" class="btn btn-primary">View my work <span>→</span></a>
+            <a href="#contact" class="btn btn-ghost">Let's talk</a>
+          </div>
+
+          <div class="hero-stats reveal r-d4">
+            <div class="stat"><span class="stat-n mono">4+</span><span class="stat-l">Years exp.</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><span class="stat-n mono">3+</span><span class="stat-l">Projects</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><span class="stat-n mono"></span><span class="stat-l">GitHub </span></div>
+          </div>
+        </div>
+
+        <!-- Terminal -->
+        <div class="hero-terminal reveal r-d2">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <div class="t-dots">
+                <span class="td td-r"></span>
+                <span class="td td-y"></span>
+                <span class="td td-g"></span>
+              </div>
+              <span class="t-title mono">charityawuor10-cmd: ~/portfolio</span>
+            </div>
+            <div class="terminal-body mono">
+              <div class="tl"><span class="t-p">$</span> <span class="t-c">cat about.json</span></div>
+              <div class="t-out">
+                <span class="t-b">{</span><br>
+                &nbsp;&nbsp;<span class="t-k">"name"</span>: <span class="t-s">"Charity Awuor"</span>,<br>
+                &nbsp;&nbsp;<span class="t-k">"role"</span>: <span class="t-s">"Full-Stack Engineer"</span>,<br>
+                &nbsp;&nbsp;<span class="t-k">"stack"</span>: [<span class="t-s">"React"</span>, <span class="t-s">"Node.js"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-s">"TypeScript"</span>, <span class="t-s">"Go"</span>],<br>
+                &nbsp;&nbsp;<span class="t-k">"location"</span>: <span class="t-s">"San Francisco"</span>,<br>
+                &nbsp;&nbsp;<span class="t-k">"available"</span>: <span class="t-bool">true</span><br>
+                <span class="t-b">}</span>
+              </div>
+              <div class="tl tl-active">
+                <span class="t-p">$</span>
+                <span class="t-c" id="typingText"></span>
+                <span class="t-cursor">▋</span>
+              </div>
+            </div>
+          </div>
+          <!-- floating badges -->
+          <div class="fb fb1 mono">React 18</div>
+          <div class="fb fb2 mono">Node.js</div>
+          <div class="fb fb3 mono">TypeScript</div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span class="mono">scroll</span>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-label mono">// 02. about_me</span>
+          <h2 class="sec-title">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Image -->
+          <div class="about-img-col reveal">
+            <div class="about-img-frame">
+              <img src="img.png"
+                   alt="Charity Awuor" class="about-img" loading="lazy" />
+            </div>
+            <div class="about-img-tag mono"><span class="tag-dot"></span> Nairobi Kenya,</div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-text-col">
+            <p class="about-lead reveal">
+              I'm a full-stack engineer with <span class="text-accent">5+ years</span> of experience turning ambitious ideas into production-grade software.
+            </p>
+            
+            <p class="about-body reveal r-d1">
+              I work across the full stack — React &amp; Next.js on the frontend, Node.js and Go on the backend, deployed on AWS or Vercel. I'm an active open-source contributor and believe deeply in shipping fast and iterating.
+            </p>
+
+            <div class="timeline reveal r-d2">
+              div class="tl-item">
+                <div class="tl-dot"></div>
+                <div><div class="tl-role">Full-Stack Engineer</div><div class="tl-co mono">Linear · 2023-Present</div></div>
+              </div>
+            </div>
+
+            <div class="about-actions reveal r-d3">
+              <a href="assets/images/resume.pdf" download class="btn btn-primary">↓ Download Resume</a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-label mono">// 03. projects</span>
+          <h2 class="sec-title">What I've Built</h2>
+          <p class="sec-desc">A selection of recent work — from open-source tools to production SaaS platforms.</p>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-tabs reveal" role="tablist" aria-label="Filter projects">
+          <button class="ftab active" data-filter="all"        role="tab">All</button>
+          <button class="ftab" data-filter="fullstack"         role="tab">Full-Stack</button>
+          <button class="ftab" data-filter="frontend"          role="tab">Frontend</button>
+          <button class="ftab" data-filter="backend"           role="tab">Backend</button>
+          <button class="ftab" data-filter="opensource"        role="tab">Open Source</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="proj-grid" id="projectsGrid">
+
+          <article class="proj-card proj-featured" data-cat="fullstack" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Velo" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://example.com" target="_blank" rel="noopener" class="proj-btn" aria-label="Live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <span class="proj-featured-tag mono">★ Featured</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Full-Stack</span><span class="proj-yr mono">2024</span></div>
+              <h3 class="proj-title">Velo — Deploy Platform</h3>
+              <p class="proj-desc">A self-hosted deployment platform with zero-downtime deploys, automatic SSL, GitHub Actions integration, and real-time log streaming.</p>
+              <div class="proj-stack">
+                <span class="stag">Go</span><span class="stag">React</span><span class="stag">Docker</span><span class="stag">Postgres</span><span class="stag">WebSockets</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card" data-cat="opensource" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80" alt="QueryKit" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://github.com/charityawuor10-cmd" target="_blank" rel="noopener" class="proj-btn" aria-label="Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Open Source</span><span class="proj-yr mono">2023</span></div>
+              <h3 class="proj-title">QueryKit — TypeScript ORM</h3>
+              <p class="proj-desc">Lightweight, type-safe ORM for Node.js with query builder, schema migrations, and connection pooling. 1.2k GitHub stars.</p>
+              <div class="proj-stack"><span class="stag">TypeScript</span><span class="stag">Node.js</span><span class="stag">SQL</span></div>
+            </div>
+          </article>
+
+          <article class="proj-card" data-cat="fullstack" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Trace APM" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://example.com" target="_blank" rel="noopener" class="proj-btn" aria-label="Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Full-Stack</span><span class="proj-yr mono">2023</span></div>
+              <h3 class="proj-title">Trace — APM Dashboard</h3>
+              <p class="proj-desc">Real-time performance monitoring with distributed tracing, anomaly detection, and customizable alerting rules.</p>
+              <div class="proj-stack"><span class="stag">React</span><span class="stag">ClickHouse</span><span class="stag">WebSocket</span><span class="stag">Redis</span></div>
+            </div>
+          </article>
+
+          <article class="proj-card" data-cat="frontend" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800&q=80" alt="Prism" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://example.com" target="_blank" rel="noopener" class="proj-btn" aria-label="Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Frontend</span><span class="proj-yr mono">2022</span></div>
+              <h3 class="proj-title">Prism — Design System</h3>
+              <p class="proj-desc">A fully accessible React component library with 80+ components, dark mode support, and a Storybook documentation site.</p>
+              <div class="proj-stack"><span class="stag">React</span><span class="stag">Storybook</span><span class="stag">CSS Modules</span></div>
+            </div>
+          </article>
+
+          <article class="proj-card" data-cat="backend" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Gate" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://example.com" target="_blank" rel="noopener" class="proj-btn" aria-label="Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Backend</span><span class="proj-yr mono">2022</span></div>
+              <h3 class="proj-title">Gate — API Gateway</h3>
+              <p class="proj-desc">High-throughput API gateway with JWT auth, rate limiting, request transformation. Handles 10k+ req/s.</p>
+              <div class="proj-stack"><span class="stag">Go</span><span class="stag">Redis</span><span class="stag">Nginx</span><span class="stag">Prometheus</span></div>
+            </div>
+          </article>
+
+          <article class="proj-card" data-cat="opensource" tabindex="0">
+            <div class="proj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80" alt="devx CLI" class="proj-img" loading="lazy"/>
+              <div class="proj-overlay">
+                <a href="https://github.com" target="_blank" rel="noopener" class="proj-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://example.com" target="_blank" rel="noopener" class="proj-btn" aria-label="Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-cat mono">Open Source</span><span class="proj-yr mono">2021</span></div>
+              <h3 class="proj-title">devx — CLI Toolkit</h3>
+              <p class="proj-desc">A developer productivity CLI that bootstraps projects, manages env vars, runs scripts, and integrates with CI pipelines.</p>
+              <div class="proj-stack"><span class="stag">Node.js</span><span class="stag">CLI</span><span class="stag">Shell</span></div>
+            </div>
+          </article>
+
+        </div><!-- /proj-grid -->
+
+        <div class="proj-more reveal">
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost">View all on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-label mono">// 04. skills</span>
+          <h2 class="sec-title">Tech Stack</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3 class="sg-title mono">Frontend</h3>
+            <div class="sk-list">
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">React / Next.js</span><span class="sk-pct mono">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">TypeScript</span><span class="sk-pct mono">90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">CSS / Tailwind</span><span class="sk-pct mono">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal r-d1">
+            <h3 class="sg-title mono">Backend</h3>
+            <div class="sk-list">
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">Node.js / Express</span><span class="sk-pct mono">92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">Go</span><span class="sk-pct mono">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">PostgreSQL / Redis</span><span class="sk-pct mono">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal r-d2">
+            <h3 class="sg-title mono">DevOps</h3>
+            <div class="sk-list">
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">Docker / Kubernetes</span><span class="sk-pct mono">78%</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">AWS / GCP</span><span class="sk-pct mono">75%</span></div><div class="sk-bar"><div class="sk-fill" data-w="75"></div></div></div>
+              <div class="sk-item"><div class="sk-head"><span class="sk-name">CI/CD Pipelines</span><span class="sk-pct mono">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-cloud reveal">
+          <span class="tc">Git</span><span class="tc">GraphQL</span><span class="tc">REST APIs</span>
+          <span class="tc">Vitest</span><span class="tc">Prisma</span><span class="tc">Linux</span>
+          <span class="tc">WebSockets</span><span class="tc">Figma</span><span class="tc">Terraform</span>
+          <span class="tc">Webpack</span><span class="tc">Vite</span><span class="tc">Storybook</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-label mono">// 05. contact</span>
+          <h2 class="sec-title">Get In Touch</h2>
+          <p class="sec-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="ct-info reveal">
+            <div class="ct-info-head mono">&gt; connection.open()</div>
+            <div class="ct-details">
+              <div class="ct-item">
+                <span class="ct-icon">✉</span>
+                <div><div class="ct-label mono">Email</div><a href="mailto:charityawuor10@gmail.com" class="ct-val">charityawuor10@gmail.com</a></div>
+              </div>
+              <div class="ct-item">
+                <span class="ct-icon">📍</span>
+                <div><div class="ct-label mono">Location</div><span class="ct-val">Nairobi, Kenya CA</span></div>
+              </div>
+              <div class="ct-item">
+                <span class="ct-icon">⏱</span>
+                <div><div class="ct-label mono">Response Time</div><span class="ct-val">Within 24 hours</span></div>
+              </div>
+            </div>
+            <div class="ct-socials">
+              <a href="https://github.com"   target="_blank" rel="noopener" class="soc-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="soc-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://twitter.com"  target="_blank" rel="noopener" class="soc-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+                Twitter
+              </a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="ct-form-wrap reveal r-d1">
+            <div class="form-term-bar mono">
+              <span class="ftb-dots"><span></span><span></span><span></span></span>
+              contact.form.js
+            </div>
+            <form class="ct-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="fg">
+                  <label for="name" class="flabel mono">// name</label>
+                  <input type="text" id="name" name="name" class="finput" placeholder="Your full name" required />
+                  <span class="ferr" id="nameErr"></span>
+                </div>
+                <div class="fg">
+                  <label for="email" class="flabel mono">// email</label>
+                  <input type="email" id="email" name="email" class="finput" placeholder="your@email.com" required />
+                  <span class="ferr" id="emailErr"></span>
+                </div>
+              </div>
+              <div class="fg">
+                <label for="subject" class="flabel mono">// subject</label>
+                <select id="subject" name="subject" class="finput fselect" required>
+                  <option value="">Select a topic...</option>
+                  <option value="freelance">Freelance Project</option>
+                  <option value="fulltime">Full-Time Opportunity</option>
+                  <option value="collab">Collaboration</option>
+                  <option value="opensource">Open Source</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="ferr" id="subjectErr"></span>
+              </div>
+              <div class="fg">
+                <label for="message" class="flabel mono">// message</label>
+                <textarea id="message" name="message" class="finput ftextarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                <span class="ferr" id="messageErr"></span>
+              </div>
+              <div class="form-foot">
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                  <span class="btn-label">Send Message →</span>
+                  <span class="btn-loading" style="display:none">
+                    <span class="spinner"></span> Sending...
+                  </span>
+                </button>
+                <span class="form-hint mono">// Powered by Node.js</span>
+              </div>
+              <div class="form-success" id="formSuccess">
+                <span class="success-chk">✓</span>
+                <div><strong>Message sent!</strong><p>I'll reply within 24 hours.</p></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo mono">[AC]</a>
+          <p class="footer-tag">Building the future,<br>one commit at a time.</p>
+        </div>
+        <div class="footer-nav">
+          <h4 class="fn-title mono">// navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4 class="fn-title mono">// connect</h4>
+          <ul>
+            <li><a href="https://github.com"   target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://linkedin.com"  target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://twitter.com"   target="_blank" rel="noopener">Twitter ↗</a></li>
+            <li><a href="mailto:charityawuor10@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-cta">
+          <p class="mono footer-cta-label">// open_to_work = true</p>
+          <a href="#contact" class="btn btn-primary">Start a project →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mono">© 2026 Charity Awuor. Crafted with ♥ and too much coffee.</p>
+        <p class="mono">Built with <span class="text-accent">HTML</span> · <span class="text-accent">CSS</span> · <span class="text-accent">JS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="btt" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
