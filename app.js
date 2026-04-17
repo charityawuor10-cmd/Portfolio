@@ -1,5 +1,5 @@
 /**
- * ALEX CHEN — DEVELOPER PORTFOLIO
+ *CHARITY AWUOR — DEVELOPER PORTFOLIO
  * app.js — All interactive behaviour
  *
  * Sections:
