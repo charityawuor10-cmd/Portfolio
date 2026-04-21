@@ -1,4 +1,4 @@
-#Charity — Developer Portfolio
+#Charity Awuor- Developer Portfolio
 
 A sleek, dark-mode developer portfolio with code-inspired aesthetics, smooth animations, and a fully validated contact form wired to a Node.js backend.
 

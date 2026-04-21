@@ -617,6 +617,7 @@ ul { list-style: none; }
   transition: all var(--transition);
 
 }
+
 .proj-btn:hover { border-color: var(--accent); color: var(--accent); }
 .proj-featured-tag {
   position: absolute; top: 14px; left: 14px;
